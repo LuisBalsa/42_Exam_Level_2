@@ -3,11 +3,11 @@ graph LR
 A[flood_fill function] --> B{Base case}
 B -- Check if coordinates are out of bounds --> C[Return]
 B -- Check if current character is different from target character --> C[Return]
-B -- Change current character to 'F'
-B --> D[flood_fill function (x - 1, y)]
-B --> E[flood_fill function (x + 1, y)]
-B --> F[flood_fill function (x, y - 1)]
-B --> G[flood_fill function (x, y + 1)]
+B -- Change current character to 'F' --> CZ['old' -> F]
+B --> D[flood_fill function x - 1, y]
+B --> E[flood_fill function x + 1, y]
+B --> F[flood_fill function x, y - 1]
+B --> G[flood_fill function x, y + 1]
 D --> B
 E --> B
 F --> B
