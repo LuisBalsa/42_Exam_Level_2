@@ -1,7 +1,6 @@
 ```mermaid
 graph LR;
-    A[Start] --> B{Input\noctet};
-    B -- Get the most\nsignificant\nbit MSB position --> C{Position =\n256};
+    A[Start] --> C{Position =\n256};
     C -- Shift position\nright by 1 bit --> D{Position =\nPosition >> 1};
     D -- Check if the\nbit is set --> E{octet & Position};
     E -- Bit is set --> F[Print 1];
