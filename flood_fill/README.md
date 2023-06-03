@@ -23,3 +23,5 @@ If the base case conditions are not met, it changes the current character to 'F'
 The `flood_fill` function simply calls `ft` with the starting coordinates `begin.x` and `begin.y` and the target character `tab[begin.y][begin.x]`. This initiates the flood fill operation from the starting point.
 
 The provided mermaid diagram visually represents the flow of the code, illustrating the recursive calls and base case conditions.
+
+
