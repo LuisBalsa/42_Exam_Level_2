@@ -25,3 +25,21 @@ The `flood_fill` function simply calls `ft` with the starting coordinates `begin
 The provided mermaid diagram visually represents the flow of the code, illustrating the recursive calls and base case conditions.
 
 
+
+### Flood Fill Algorithm
+
+The **Flood Fill** algorithm is a technique used in computer graphics and image processing to fill a contiguous area of pixels with a specific color. It starts from a given pixel and recursively visits adjacent pixels of the same color, changing their color until the entire area is filled.
+
+The algorithm is commonly used for tasks such as filling shapes, coloring regions, and implementing bucket fill tools in graphics editing software.
+
+#### How Flood Fill Works
+
+The Flood Fill algorithm follows a simple process:
+
+1. Start at a given pixel in an image or grid.
+2. Check the color of the current pixel.
+3. If the color of the current pixel matches the target color, change its color to the replacement color.
+4. Recursively apply the algorithm to the neighboring pixels (up, down, left, and right) that have the same color as the original pixel.
+5. Repeat steps 2-4 for each visited pixel until all connected pixels of the same color are processed.
+
+The algorithm effectively "floods" the area with the replacement color, spreading from the initial pixel to adjacent pixels of the same color and continuing until the entire connected region is filled.
