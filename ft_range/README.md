@@ -10,14 +10,11 @@ Write a C function `ft_range` that takes two integers `start` and `end` as param
 #include <stdlib.h>
 
 int *ft_range(int start, int end) {
-    int i = 1;
-    i -= 2 * (end < start);
+    int i = 1 - 2 * (end < start);
     int len = (end - start) * i + 1;
     int *array = (int *)malloc(sizeof(int) * len);
-    
     while (len--)
         array[len] = start + (len * i);
-    
     return array;
 }
 ```
