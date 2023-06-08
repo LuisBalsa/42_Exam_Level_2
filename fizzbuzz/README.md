@@ -22,7 +22,7 @@ Finally, the variable `i` is incremented, and the loop continues until `i` reach
 
 The program repeats this process for each number from 1 to 100, producing the desired output where numbers divisible by 3 are replaced with "fizz", numbers divisible by 5 are replaced with "buzz", and numbers divisible by both 3 and 5 are replaced with "fizzbuzz".
 
-### Mermaid Diagram:
+### Diagram:
 
 ```mermaid
 graph
