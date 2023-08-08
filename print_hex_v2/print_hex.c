@@ -3,7 +3,7 @@
 void	ft_puthex(int nbr)
 {
 	char *base = "0123456789abcdef";
-	if(nbr > 16)
+	if(nbr >= 16)
 		ft_puthex(nbr / 16);
 	nbr = nbr % 16;
 	write(1, &base[nbr], 1);
