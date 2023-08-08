@@ -3,7 +3,7 @@
 void	ft_hex(int nbr)
 {
 	char	*str = "0123456789abcdef";
-	if(nbr > 16)
+	if(nbr >= 16)
 		ft_hex(nbr / 16);
 	write(1, &str[nbr % 16], 1);
 }
